@@ -1,20 +1,45 @@
-html {
+html, body {
+	padding: 0;
+  margin: 0;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-body {
-  margin: 0;
+html {
+  font-size: 1em;
 }
 
+body {
+  font-size: 100%;
+  margin: 0;
+  background-color: #111;
+  color:#DDD;
+  font-family: Helvetica, sans-serif;
+}
 
-h1 {
-  font-size: 2em;
+h1, h2, h3 {
+  font-family: 'Zen Dots', sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 3em;
   margin: 0.67em 0;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+hr {
+  width: 95%;
+  margin: 2em auto;
 }
 
 small {
-  font-size: 80%;
+  font-family: Helvetica, sans-serif;
+  font-size: 50%;
 }
 
 .index-splash {
@@ -23,7 +48,7 @@ small {
 }
 
 .index-splash-image {
-    background-image: url(../media/background.jpg);
+    background-image: url(../media/schach_3.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,14 +57,27 @@ small {
     position: absolute;
 }
 
-.splash {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    height: 100%;
-    line-height: 15vh;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #666;
+.splash-box {
+  text-align: left;
+  padding: 0 1rem;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.205);
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.384);
+  border-style: solid;
+}
+
+.splash-box h1 {
+  text-align: left;
+}
+
+section {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  max-width: 1024px;
+}
+
+section img {
+  margin-top: 0.5rem;
+  width: 100%;
 }
