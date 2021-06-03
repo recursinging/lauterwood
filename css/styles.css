@@ -6,14 +6,14 @@ html, body {
 }
 
 html {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 body {
   font-size: 100%;
   margin: 0;
-  background-color: #111;
-  color:#DDD;
+  background-color: rgb(45, 40, 30);
+  color:#d3d4d0;
   font-family: Helvetica, sans-serif;
 }
 
@@ -23,23 +23,31 @@ h1, h2, h3 {
 
 h1, h2 {
   font-family: 'Zen Dots', sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   margin: 0.67em 0;
   letter-spacing: 0.3rem;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 hr {
   width: 95%;
-  margin: 2em auto;
+  margin: 2rem auto;
 }
 
 small {
   font-family: Helvetica, sans-serif;
   font-size: 50%;
+}
+
+a {
+  color: rgb(167, 145, 104);
+}
+
+a:visited {
+  color: rgb(157, 97, 194);
 }
 
 .index-splash {
@@ -136,4 +144,44 @@ section {
 section img {
   margin-top: 0.5rem;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+
+  h1, h2 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+
+  .index-splash-image:nth-child(1) {
+    background-image: url(../media/DSC02043.jpg);
+  }
+  .index-splash-image:nth-child(2) {
+    background-image: url(../media/DSC02135.jpg);
+  }
+  .index-splash-image:nth-child(3) {
+    background-image: url(../media/DSC02026.jpg);
+  }
+  .index-splash-image:nth-child(4) {
+    background-image: url(../media/DSC01836.jpg);
+  }
+  .index-splash-image:nth-child(5) {
+    background-image: url(../media/DSC02058.jpg);
+  }
+  .index-splash-image:nth-child(6) {
+    background-image: url(../media/DSC01896.jpg);
+  }
+  .diy_media {
+    display: block;
+  }
+  .detail_media {
+    display: block;
+  }
+  .row {
+    display: block;
+  }
 }
